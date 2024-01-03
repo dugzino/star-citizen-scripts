@@ -3,7 +3,16 @@
 ## Hot to use
 
 This script requires for it to be in Star Citizen's root folder (Default: "C:\Program Files\Roberts Space Industries\StarCitizen").  
-I will add a prompt to set the path later.
+I will add a prompt to set the path later.  
+To run it, simply right click on it and choose "Run with PowerShell".
+
+## Notice
+
+Use this at your own risks.  
+The script is tested by me, myself, and I, AND it's working plenty fine,  
+but you should always be careful when using such methods.
+
+Also the script shouldn't need admin rights to run it.
 
 ## Scripts
 
@@ -50,6 +59,25 @@ The current setting files this script copying are everything located in these fo
 ## Screenshots
 
 Screenshots copied from LIVE will are copied in the root of the "_Screenshots" folder,
-while those from other installations will be copied into a folder named "TestBranded".
+while those from other installations will be copied into a folder named "TestBranded".  
 The reason for that is because screenshots taken from test servers come with a text hardtyped on the bottom of the screen,
 as you probably noticed when playing in PTU; EPTU; or even TECH-PREVIEW servers.
+
+## Known errors
+
+### "Scripts" cannot be loaded because running scripts is disabled on this system.
+
+This is a most probable encountering issue you might face.  
+It's simply a way for Microsoft to make it safer,  
+as in to not let you run wild and run random unknown scripts.
+
+1. Open PowerShell with Run as Administrator.
+2. Run this command in PowerShell `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
+3. Type Y and press Enter.
+
+And now you should be able to run the script again.
+
+### Bunch or red messages when running the script
+
+When running on a fresh install, it'll spam that it didn't find any files it's trying to save or delete.  
+So, it's a pretty normal behaviour, which I'll try to soften later.
