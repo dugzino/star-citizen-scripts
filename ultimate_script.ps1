@@ -69,7 +69,7 @@ function CleanFolders {
   # delete USER folder in every install
   foreach ($INSTALL_PATH in $INSTALLATION_FOLDERS) {
     # Copy USER folder only if install folder exists
-    If ((test-path -PathType container ".\$INSTALL_PATH")) {
+    If ((test-path -PathType container ".\$INSTALL_PATH\USER")) {
       Remove-Item -Recurse -Path ".\$INSTALL_PATH\USER"
       Write-Output "USER folder in '$INSTALL_PATH' got deleted"
     }
@@ -84,7 +84,7 @@ function PushSavesToInstalls {
   foreach ($INSTALL_PATH in $INSTALLATION_FOLDERS) {
     # Copy USER folder only if install folder exists
     If ((test-path -PathType container ".\$INSTALL_PATH")) {
-      Copy-Item -Force -Recurse -Path ".$_SETTINGS_FOLDER\*" -Destination ".\$INSTALL_PATH"
+      Copy-Item -Force -Recurse -Path ".\$_SETTINGS_FOLDER\*" -Destination ".\$INSTALL_PATH"
       Write-Output "Settings have been copied to '$INSTALL_PATH' folder"
     }
   }
