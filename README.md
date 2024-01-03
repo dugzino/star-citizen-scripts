@@ -1,5 +1,10 @@
 # Star Citizen Scripts
 
+## Hot to use
+
+This script requires for it to be in Star Citizen's root folder (Default: "C:\Program Files\Roberts Space Industries\StarCitizen").  
+I will add a prompt to set the path later.
+
 ## Scripts
 
 Script written in PowerShell will prompt this question:
