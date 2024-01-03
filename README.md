@@ -3,8 +3,10 @@
 ## Hot to use
 
 This script requires for it to be in Star Citizen's root folder (Default: "C:\Program Files\Roberts Space Industries\StarCitizen").  
-I will add a prompt to set the path later.  
-To run it, simply right click on it and choose "Run with PowerShell".
+I will add a prompt to set the path later.
+
+To run it, simply right click on it and choose "Run with PowerShell".  
+Or open a PowerShell prompt (CMD, Terminal, or whatever you like) and run the script from it: `.\ultimate_script.ps1`
 
 ## Notice
 
